@@ -82,6 +82,7 @@
     })
 
     // post method for registeration of user
+    
     app.post("/register",function(req,res){
 
         User.register({username:req.body.username},req.body.password,function(err,user){
